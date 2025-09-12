@@ -74,3 +74,8 @@ skip-magic-trailing-comma = false
 line-ending = "auto"
 docstring-code-format = true
 docstring-code-line-length = "dynamic"
+
+[tool.mypy]
+python_version = "3.13"
+strict = true
+exclude = ["tests"]
