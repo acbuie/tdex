@@ -5,7 +5,7 @@ description = "A pokedex for your terminal!"
 readme = "README.md"
 authors = [{ name = "acbuie", email = "aidancbuie@gmail.com" }]
 requires-python = ">=3.13"
-dependencies = []
+dependencies = ["aiopokeapi>=0.1.12", "cyclopts>=3.24.0", "rich>=14.1.0"]
 
 [dependency-groups]
 dev = ["mypy>=1.18.1", "pytest>=8.4.2", "ruff>=0.13.0"]
@@ -71,6 +71,18 @@ ignore = [
   "TD",
   "NPY",
   "PD",
+  "W191",
+  "E111",
+  "E114",
+  "E117",
+  "E501",
+  "D203",
+  "D206",
+  "D212",
+  "D300",
+  "Q000",
+  "Q001",
+  "Q003",
 ]
 fixable = ["ALL"]
 dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
